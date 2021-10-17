@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>El Pollos</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/funcion.js'></script>
+</head>
+
+<body>
+    <div class="contenedor" id="contenedor">
+        <div id="titulo">
+            <h1> <span id="spanorden">ORDENE SU</span> <span id="spanpollo">POLLO</span></h1>
+        </div>
+
+        <div id="informacion">
+            <fieldset class="grupocontainer" id="grupocontainer">
+                <legend><span class="labelgroup">Combos y Productos</span></legend>
+                <label>Si no da al Boton comenzar pedido, no se registrara su pedido</label>
+                <button onclick="radiobuton()">Comenzar pedido</button>
+
+                <h2>Combos</h2>
+                <fieldset class="group" id="group">
+                <input type="radio" name="btnradio" id="sb" value="1" checked="checked" />
+                <label for="browser">Super Combo</label>
+
+                <input type="radio" name="btnradio" id="personal" value="2"/>
+                <label for="personal">Combo Personal</label>
+
+                <input type="radio" name="btnradio" id="infantil" value="3" />
+                <label for="infantil">Combo Infantil</label>
+                </fieldset>
+                <br>
+
+                <h2>Productos extras:</h2>
+                <input type="checkbox" name="ckbensalda" id="ckbensalda" />
+                <label for="ckbensalda">Ensalada</label>
+
+
+                <input type="checkbox" name="ckbpapas" id="chkboxpapas" />
+                <label for="chkboxpapas">Papas Fritas</label>
+
+
+                <input type="checkbox" name="ckbpollogrande" id="chkboxpollog" />
+                <label for="chkboxpollog">Pieza de pollo grande</label>
+
+
+                <input type="checkbox" name="ckbpollom" id="ckbpollom" />
+                <label for="ckbpollom">Pieza de pollo mediana</label>
+                <br>
+
+                <input type="checkbox" name="ckbpollop" id="ckbpollop" />
+                <label for="ckbpollop">Pieza de pollo pequeña</label>
+
+
+                <input type="checkbox" name="ckbebidag" id="ckbebidag" />
+                <label for="ckbebidag">Bebida Grande</label>
+
+
+                <input type="checkbox" name="ckbebidam" id="ckbebidam" />
+                <label for="ckbebidam">Bebida Mediana</label>
+
+
+                <input type="checkbox" name="ckbbebidap" id="ckbbebidap" />
+                <label for="ckbbebidap">Bebida Pequeña</label>
+                <br>
+
+                <input type="checkbox" name="ckbcafe" id="ckbcafe" />
+                <label for="ckbcafe">Cafe</label>
+
+
+                <input type="checkbox" name="ckbpostre" id="ckbpostre" />
+                <label for="ckbpostre">Postre</label>
+                <button onclick="">Agregar</button>
+                <br>
+                <br>
+
+                <h2 onclick="myFunction()">Sugerencias:</h2>
+                <div id="sugerencias" name="sugerencias" style="display: none;">
+                    
+                    <input type="text" class="user" name="txtsugerencias" id="sugerencias" />
+                    <br>
+
+                </div>
+                <br>
+                
+                <label>Total a Pagar: $</label>
+                    <label id="resultado" class="resultado"></label>
+                    <br>
+                    <button id="btnenviar">Enviar</button>
+                    
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

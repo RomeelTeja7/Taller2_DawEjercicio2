@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/98/1f/8b/981f8b43fb4622ee257646bb27c62dfa.jpg);
+}
+#titulo{
+    background: black;
+    color: white;
+    height: 90px;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 25px;
+}
+.contenedor{
+    margin: 5%;
+    background: white;
+}
+#contendor{
+    background: black;
+    color: white;
+}
+#sugerencias{
+    height: 150px;
+    width: 500px;
+}
+#grupocontainer{
+    padding: 5%;
+}
+#spanpollo{
+    font-size: 45px;
+    color:red;
+}
+#group{
+    border: none;
+}
